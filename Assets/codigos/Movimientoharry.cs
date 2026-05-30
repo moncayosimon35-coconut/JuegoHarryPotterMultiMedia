@@ -4,6 +4,8 @@ public class Movimientoharry : MonoBehaviour
 {
     public float speed = 5f;
     public float gravity = 20f;
+    public float jumpForce = 8f;
+    public string nombreAnimacionSalto = "Jump";
 
     private Animator animator;
     private CharacterController controller;
@@ -21,24 +23,36 @@ public class Movimientoharry : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        // 1. Cálculo de dirección
         Vector3 move = new Vector3(horizontal, 0f, vertical);
 
         if (move.magnitude > 1f)
             move = move.normalized;
 
-        // 2. Control Físico del Character Controller
+        bool tocandoSuelo = controller != null && (controller.isGrounded || estaEnSueloCorrer);
+
+        if (tocandoSuelo && velocity.y <= 0f)
+        {
+            velocity.y = -2f;
+
+            if (Input.GetButtonDown("Jump"))
+            {
+                velocity.y = jumpForce;
+                estaEnSueloCorrer = false;
+                tocandoSuelo = false;
+                
+                if (animator != null)
+                {
+                    animator.Play(nombreAnimacionSalto, 0, 0f);
+                }
+            }
+        }
+        else
+        {
+            velocity.y -= gravity * Time.deltaTime;
+        }
+
         if (controller != null)
         {
-            if (controller.isGrounded || estaEnSueloCorrer)
-            {
-                velocity.y = -2f; 
-            }
-            else
-            {
-                velocity.y -= gravity * Time.deltaTime;
-            }
-
             Vector3 finalMove = (move * speed) + Vector3.up * velocity.y;
             controller.Move(finalMove * Time.deltaTime);
         }
@@ -47,23 +61,23 @@ public class Movimientoharry : MonoBehaviour
             transform.Translate(move * speed * Time.deltaTime, Space.World);
         }
 
-        // 3. Rotación del personaje
         if (move != Vector3.zero)
             transform.forward = move;
 
-        // 4. SOLUCIÓN FEROZ: Control Directo de Animación (Sin pasar por parámetros ni flechas)
         bool quiereMoverse = (Mathf.Abs(horizontal) > 0.1f || Mathf.Abs(vertical) > 0.1f);
 
         if (animator != null)
         {
-            if (quiereMoverse)
+            if (!tocandoSuelo && velocity.y > 0.1f)
             {
-                // Fuerza al Animator a reproducir "Running" en el estado actual de forma fluida
+                animator.Play(nombreAnimacionSalto);
+            }
+            else if (quiereMoverse)
+            {
                 animator.Play("Running"); 
             }
             else
             {
-                // Regresa a "Idle" de inmediato si se detiene
                 animator.Play("Idle");
             }
         }
@@ -71,6 +85,12 @@ public class Movimientoharry : MonoBehaviour
 
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
+        if (velocity.y > 0f) 
+        {
+            estaEnSueloCorrer = false;
+            return;
+        }
+
         if (hit.gameObject.CompareTag("Suelocorrer"))
         {
             if (hit.normal.y > 0.7f) 
