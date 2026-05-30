@@ -68,7 +68,7 @@ public class Movimientoharry : MonoBehaviour
 
         if (animator != null)
         {
-            if (!tocandoSuelo && velocity.y > 0.1f)
+            if (!tocandoSuelo && controller != null)
             {
                 animator.Play(nombreAnimacionSalto);
             }
