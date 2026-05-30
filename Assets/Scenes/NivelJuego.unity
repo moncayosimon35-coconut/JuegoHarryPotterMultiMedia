@@ -658,8 +658,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 552aa4a6975f8cf4990b5013135480a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 3
   gravity: 20
+  jumpForce: 8
+  nombreAnimacionSalto: Jump
   estaEnSueloCorrer: 1
 --- !u!143 &950352943
 CharacterController:
@@ -1440,6 +1442,7 @@ GameObject:
   - component: {fileID: 3382053852289945128}
   - component: {fileID: 5520780818280783828}
   - component: {fileID: 336500907048836009}
+  - component: {fileID: 5520780818280783829}
   m_Layer: 0
   m_Name: gato3
   m_TagString: Untagged
@@ -2329,6 +2332,7 @@ GameObject:
   - component: {fileID: 1089535505703492715}
   - component: {fileID: 2198987244451199392}
   - component: {fileID: 3804703568362531856}
+  - component: {fileID: 3804703568362531857}
   m_Layer: 0
   m_Name: gato7
   m_TagString: Untagged
@@ -2711,6 +2715,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3804703568362531857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3269022860173433167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4092326cd91481f4d9db5124a565a519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distancia: 1.8
+  velocidad: 2
+  invertirDireccion: 1
 --- !u!33 &4024070187858671752
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3406,6 +3425,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1207868498892521432}
   m_Mesh: {fileID: 5071715839376049915, guid: 15e5af98381a67c48a301b5c16a96010, type: 3}
+--- !u!114 &5520780818280783829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207868498892521432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4092326cd91481f4d9db5124a565a519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distancia: 1.8
+  velocidad: 2
+  invertirDireccion: 1
 --- !u!33 &5561588942652340035
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3523,6 +3557,7 @@ GameObject:
   - component: {fileID: 657379358093181151}
   - component: {fileID: 6009770601380470410}
   - component: {fileID: 6063821911933757797}
+  - component: {fileID: 6063821911933757798}
   m_Layer: 0
   m_Name: gato1
   m_TagString: Untagged
@@ -3743,6 +3778,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6063821911933757798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5803773988337135931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4092326cd91481f4d9db5124a565a519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distancia: 1.8
+  velocidad: 2
+  invertirDireccion: 1
 --- !u!23 &6160911518197196851
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3941,6 +3991,7 @@ GameObject:
   - component: {fileID: 6421912501997130951}
   - component: {fileID: 994733360067955512}
   - component: {fileID: 4055568283419017381}
+  - component: {fileID: 6655039671027739393}
   m_Layer: 0
   m_Name: gato4
   m_TagString: Untagged
@@ -3948,6 +3999,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6655039671027739393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6655039671027739392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4092326cd91481f4d9db5124a565a519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distancia: 1.8
+  velocidad: 2
+  invertirDireccion: 0
 --- !u!1 &6673011491722958738
 GameObject:
   m_ObjectHideFlags: 0
@@ -3977,6 +4043,7 @@ GameObject:
   - component: {fileID: 5055873048741867883}
   - component: {fileID: 7279937539187859841}
   - component: {fileID: 1885121187308708869}
+  - component: {fileID: 7279937539187859842}
   m_Layer: 0
   m_Name: gato12
   m_TagString: Untagged
@@ -3995,6 +4062,7 @@ GameObject:
   - component: {fileID: 1488323282654857065}
   - component: {fileID: 3558673010118219531}
   - component: {fileID: 162737575262562763}
+  - component: {fileID: 6769320029522597143}
   m_Layer: 0
   m_Name: gato9
   m_TagString: Untagged
@@ -4002,6 +4070,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6769320029522597143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6769320029522597142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4092326cd91481f4d9db5124a565a519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distancia: 1.8
+  velocidad: 3
+  invertirDireccion: 0
 --- !u!23 &6791541183295832529
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4150,6 +4233,7 @@ GameObject:
   - component: {fileID: 1590030838100490637}
   - component: {fileID: 1357246712039721311}
   - component: {fileID: 1790498611534477419}
+  - component: {fileID: 6899851826638327730}
   m_Layer: 0
   m_Name: gato11
   m_TagString: Untagged
@@ -4157,6 +4241,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6899851826638327730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6899851826638327729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4092326cd91481f4d9db5124a565a519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distancia: 1.8
+  velocidad: 5
+  invertirDireccion: 0
 --- !u!4 &6921140331680775857
 Transform:
   m_ObjectHideFlags: 0
@@ -4198,6 +4297,7 @@ GameObject:
   - component: {fileID: 5713878160267482474}
   - component: {fileID: 8552877263986012044}
   - component: {fileID: 1377741269811390411}
+  - component: {fileID: 8552877263986012045}
   m_Layer: 0
   m_Name: gato10
   m_TagString: Untagged
@@ -4228,6 +4328,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6730634261421077480}
   m_Mesh: {fileID: -6649314001100761778, guid: 15e5af98381a67c48a301b5c16a96010, type: 3}
+--- !u!114 &7279937539187859842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6730634261421077480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4092326cd91481f4d9db5124a565a519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distancia: 1.8
+  velocidad: 5
+  invertirDireccion: 0
 --- !u!23 &7433014382731805579
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4355,6 +4470,7 @@ GameObject:
   - component: {fileID: 933640543504711954}
   - component: {fileID: 4024070187858671752}
   - component: {fileID: 5568956742555718223}
+  - component: {fileID: 7559340667383178546}
   m_Layer: 0
   m_Name: gato13
   m_TagString: Untagged
@@ -4362,6 +4478,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7559340667383178546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7559340667383178545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4092326cd91481f4d9db5124a565a519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distancia: 1.8
+  velocidad: 5
+  invertirDireccion: 0
 --- !u!23 &7572809081105101482
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4451,6 +4582,7 @@ GameObject:
   - component: {fileID: 6465445304856604978}
   - component: {fileID: 2689133249570039133}
   - component: {fileID: 726928216187537187}
+  - component: {fileID: 7635936541077875062}
   m_Layer: 0
   m_Name: gato6
   m_TagString: Untagged
@@ -4458,6 +4590,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7635936541077875062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7635936541077875061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4092326cd91481f4d9db5124a565a519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distancia: 1.8
+  velocidad: 2
+  invertirDireccion: 0
 --- !u!23 &7656342346394167457
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4610,6 +4757,7 @@ GameObject:
   - component: {fileID: 6420523583344901}
   - component: {fileID: 5841180451498681914}
   - component: {fileID: 3441902262042002083}
+  - component: {fileID: 7961050841545736076}
   m_Layer: 0
   m_Name: gato8
   m_TagString: Untagged
@@ -4617,6 +4765,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7961050841545736076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7961050841545736075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4092326cd91481f4d9db5124a565a519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distancia: 1.8
+  velocidad: 2
+  invertirDireccion: 0
 --- !u!1 &7963667670694404504
 GameObject:
   m_ObjectHideFlags: 0
@@ -4628,6 +4791,7 @@ GameObject:
   - component: {fileID: 4282677685441167562}
   - component: {fileID: 5561588942652340035}
   - component: {fileID: 1430682883268181290}
+  - component: {fileID: 7963667670694404505}
   m_Layer: 0
   m_Name: gato0
   m_TagString: Untagged
@@ -4635,6 +4799,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7963667670694404505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7963667670694404504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4092326cd91481f4d9db5124a565a519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distancia: 1.8
+  velocidad: 2
+  invertirDireccion: 0
 --- !u!23 &7982184486773262572
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4821,6 +5000,7 @@ GameObject:
   - component: {fileID: 288194111087521512}
   - component: {fileID: 3465733785484877264}
   - component: {fileID: 5938197566810896071}
+  - component: {fileID: 8387178967248262371}
   m_Layer: 0
   m_Name: gato5
   m_TagString: Untagged
@@ -4828,6 +5008,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8387178967248262371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8387178967248262370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4092326cd91481f4d9db5124a565a519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distancia: 1.8
+  velocidad: 2
+  invertirDireccion: 1
 --- !u!1 &8399304557625477672
 GameObject:
   m_ObjectHideFlags: 0
@@ -4872,6 +5067,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6966048789451976200}
   m_Mesh: {fileID: 8486862896904083716, guid: 15e5af98381a67c48a301b5c16a96010, type: 3}
+--- !u!114 &8552877263986012045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6966048789451976200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4092326cd91481f4d9db5124a565a519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distancia: 1.8
+  velocidad: 4
+  invertirDireccion: 0
 --- !u!1 &8706404169509775987
 GameObject:
   m_ObjectHideFlags: 0
@@ -4927,6 +5137,7 @@ GameObject:
   - component: {fileID: 4912634736863590338}
   - component: {fileID: 2337868583934151092}
   - component: {fileID: 4366466243397464135}
+  - component: {fileID: 8918092545676103578}
   m_Layer: 0
   m_Name: gato2
   m_TagString: Untagged
@@ -4934,6 +5145,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8918092545676103578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8918092545676103577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4092326cd91481f4d9db5124a565a519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distancia: 1.8
+  velocidad: 2
+  invertirDireccion: 0
 --- !u!4 &8918094602836217657
 Transform:
   m_ObjectHideFlags: 0
