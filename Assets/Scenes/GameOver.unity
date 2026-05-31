@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 726705}
   - component: {fileID: 726707}
   - component: {fileID: 726706}
+  - component: {fileID: 726708}
   m_Layer: 5
   m_Name: gameoverimage
   m_TagString: Untagged
@@ -146,7 +147,7 @@ RectTransform:
   m_GameObject: {fileID: 726704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 9.19095, y: 4.9271455, z: 4.5785}
+  m_LocalScale: {x: 11.855407, y: 6.3555245, z: 5.9058065}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 587251823}
@@ -194,6 +195,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 726704}
   m_CullTransparentMesh: 1
+--- !u!114 &726708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d1fd658e31ce8f40a78bb8842465ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &587251819
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,6 +219,7 @@ GameObject:
   - component: {fileID: 587251822}
   - component: {fileID: 587251821}
   - component: {fileID: 587251820}
+  - component: {fileID: 587251824}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -297,6 +311,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &587251824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587251819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d1fd658e31ce8f40a78bb8842465ff6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1211898195
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,14 +430,14 @@ RectTransform:
   m_GameObject: {fileID: 1390629952}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1.6174, z: 1}
+  m_LocalScale: {x: 1.2783954, y: 2.0676768, z: 1.2783954}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 587251823}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.4, y: -56.8}
+  m_AnchoredPosition: {x: 7.4, y: -61}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1390629954
@@ -457,7 +483,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1390629955}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 587251824}
+        m_TargetAssemblyTypeName: CambiarEscena, Assembly-CSharp
+        m_MethodName: CargarNivelJuego
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1390629955
 MonoBehaviour:
   m_ObjectHideFlags: 0

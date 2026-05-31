@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Movimientoharry : MonoBehaviour
 {
+    [HideInInspector] public float velocidadActual;
+    [HideInInspector] public bool puedeSaltar = true;
     public float speed = 5f;
     public float gravity = 20f;
     public float jumpForce = 8f;
@@ -14,6 +16,7 @@ public class Movimientoharry : MonoBehaviour
 
     void Start()
     {
+        velocidadActual = speed;
         animator = GetComponent<Animator>();
         controller = GetComponent<CharacterController>();
     }
@@ -34,7 +37,7 @@ public class Movimientoharry : MonoBehaviour
         {
             velocity.y = -2f;
 
-            if (Input.GetButtonDown("Jump"))
+            if (Input.GetButtonDown("Jump") && puedeSaltar)
             {
                 velocity.y = jumpForce;
                 estaEnSueloCorrer = false;
@@ -53,7 +56,7 @@ public class Movimientoharry : MonoBehaviour
 
         if (controller != null)
         {
-            Vector3 finalMove = (move * speed) + Vector3.up * velocity.y;
+            Vector3 finalMove = (move * velocidadActual) + Vector3.up * velocity.y;
             controller.Move(finalMove * Time.deltaTime);
         }
         else
