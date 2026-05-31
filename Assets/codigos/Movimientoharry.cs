@@ -12,6 +12,15 @@ public class Movimientoharry : MonoBehaviour
     private Animator animator;
     private CharacterController controller;
     private Vector3 velocity;
+
+    //boost de los probs
+    
+private Coroutine velocidadRutina;
+private Coroutine saltoRutina;
+
+private float velocidadExtraActual = 0f;
+private float saltoExtraActual = 0f;
+
     [SerializeField] private bool estaEnSueloCorrer = false;
 
     void Start()
@@ -105,4 +114,56 @@ public class Movimientoharry : MonoBehaviour
         
         estaEnSueloCorrer = false;
     }
+
+    
+public void AplicarBoostVelocidad(float extra, float duracion)
+{
+    if (velocidadRutina != null)
+    {
+        StopCoroutine(velocidadRutina);
+        velocidadActual -= velocidadExtraActual;
+    }
+
+    velocidadRutina = StartCoroutine(BoostVelocidad(extra, duracion));
+}
+
+System.Collections.IEnumerator BoostVelocidad(float extra, float duracion)
+{
+    velocidadExtraActual = extra;
+
+    velocidadActual += extra;
+
+    yield return new WaitForSeconds(duracion);
+
+    velocidadActual -= extra;
+
+    velocidadRutina = null;
+    velocidadExtraActual = 0f;
+}
+
+public void AplicarBoostSalto(float extra, float duracion)
+{
+    if (saltoRutina != null)
+    {
+        StopCoroutine(saltoRutina);
+        jumpForce -= saltoExtraActual;
+    }
+
+    saltoRutina = StartCoroutine(BoostSalto(extra, duracion));
+}
+
+System.Collections.IEnumerator BoostSalto(float extra, float duracion)
+{
+    saltoExtraActual = extra;
+
+    jumpForce += extra;
+
+    yield return new WaitForSeconds(duracion);
+
+    jumpForce -= extra;
+
+    saltoRutina = null;
+    saltoExtraActual = 0f;
+}
+
 }

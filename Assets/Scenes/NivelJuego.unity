@@ -5282,7 +5282,6 @@ GameObject:
   - component: {fileID: 779801325}
   - component: {fileID: 779801324}
   - component: {fileID: 779801323}
-  - component: {fileID: 779801322}
   m_Layer: 0
   m_Name: modelos2:rayo (1)
   m_TagString: Untagged
@@ -5305,18 +5304,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1072601825}
   m_LocalEulerAnglesHint: {x: -27.803, y: 0, z: 0}
---- !u!114 &779801322
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 779801320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04e49085b0bda0a408bbeeb181140b75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &779801323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11647,7 +11634,6 @@ GameObject:
   - component: {fileID: 927756332}
   - component: {fileID: 927756331}
   - component: {fileID: 927756330}
-  - component: {fileID: 927756329}
   - component: {fileID: 927756328}
   m_Layer: 0
   m_Name: modelos2:escoba (1)
@@ -11684,19 +11670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saltoExtra: 5
-  duracion: 10
---- !u!114 &927756329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 927756326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04e49085b0bda0a408bbeeb181140b75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  duracion: 20
 --- !u!54 &927756330
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18582,7 +18556,6 @@ GameObject:
   - component: {fileID: 7510625866723304384}
   - component: {fileID: 7510625866723304387}
   - component: {fileID: 7510625866723304386}
-  - component: {fileID: 7510625866723304385}
   - component: {fileID: 7510625866723304388}
   m_Layer: 0
   m_Name: modelos2:escoba
@@ -20272,18 +20245,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadRotacion: 100
---- !u!114 &7510625866723304385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5794503498612772919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04e49085b0bda0a408bbeeb181140b75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &7510625866723304386
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22171,7 +22132,6 @@ GameObject:
   - component: {fileID: 8706404169509775991}
   - component: {fileID: 8706404169509775990}
   - component: {fileID: 8706404169509775992}
-  - component: {fileID: 8706404169509775989}
   m_Layer: 0
   m_Name: modelos2:rayo
   m_TagString: Untagged
@@ -22192,18 +22152,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadRotacion: 100
---- !u!114 &8706404169509775989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8706404169509775987}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04e49085b0bda0a408bbeeb181140b75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &8706404169509775990
 Rigidbody:
   m_ObjectHideFlags: 0

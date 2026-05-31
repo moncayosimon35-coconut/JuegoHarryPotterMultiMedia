@@ -13,19 +13,10 @@ public class BoostSalto : MonoBehaviour
 
             if (mov != null)
             {
-                StartCoroutine(AumentarSalto(mov));
+                mov.AplicarBoostSalto(saltoExtra, duracion);
             }
 
             Destroy(gameObject);
         }
-    }
-
-    System.Collections.IEnumerator AumentarSalto(Movimientoharry mov)
-    {
-        mov.jumpForce += saltoExtra;
-
-        yield return new WaitForSeconds(duracion);
-
-        mov.jumpForce -= saltoExtra;
     }
 }

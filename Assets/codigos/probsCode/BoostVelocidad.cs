@@ -13,19 +13,10 @@ public class BoostVelocidad : MonoBehaviour
 
             if (mov != null)
             {
-                StartCoroutine(AumentarVelocidad(mov));
+                mov.AplicarBoostVelocidad(velocidadExtra, duracion);
             }
 
             Destroy(gameObject);
         }
-    }
-
-    System.Collections.IEnumerator AumentarVelocidad(Movimientoharry mov)
-    {
-        mov.velocidadActual += velocidadExtra;
-
-        yield return new WaitForSeconds(duracion);
-
-        mov.velocidadActual -= velocidadExtra;
     }
 }
