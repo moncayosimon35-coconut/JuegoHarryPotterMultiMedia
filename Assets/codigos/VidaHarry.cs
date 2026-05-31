@@ -31,7 +31,7 @@ public class VidaHarry : MonoBehaviour
         }
     }
 
-    void ActualizarUI()
+    public void ActualizarUI()
     {
         
 corazon1.SetActive(vida >= 1);
