@@ -136,7 +136,7 @@ GameObject:
   m_TagString: Suelocorrer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &30830796
 Transform:
@@ -466,7 +466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad1310a44dfad67478bc512e918d0c77, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.353
+      value: -5.36
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad1310a44dfad67478bc512e918d0c77, type: 3}
       propertyPath: m_LocalPosition.y
@@ -650,6 +650,91 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &239290491 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 57e4ddbd001436941bc6f61a88470744, type: 3}
+  m_PrefabInstance: {fileID: 1913574033}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &239290495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239290491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1657a71fa629b8c4299b9ebbef3a1143, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetivo: {fileID: 950352944}
+  meta: {fileID: 431730030}
+  velocidad: 1
+  velocidadMax: 8
+  aumentoVelocidad: 0.005
+  gravedad: 10
+  tiempoAntesDeVolar: 1.5
+  fuerzaVolar: 5
+--- !u!143 &239290496
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239290491}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 0.11339745
+  m_Radius: 0.035
+  m_SlopeLimit: 60
+  m_StepOffset: 1
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!136 &239290497
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239290491}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.036352757
+  m_Height: 0.11339745
+  m_Direction: 1
+  m_Center: {x: 0.0000000130385205, y: 0.0000000018626451, z: -0.0000000037252916}
+--- !u!114 &239290498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239290491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ddf332449b4cd54aa36e336820aa7d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &431730026
 GameObject:
   m_ObjectHideFlags: 0
@@ -6407,6 +6492,87 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1885962063}
   m_CullTransparentMesh: 1
+--- !u!1001 &1913574033
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 57e4ddbd001436941bc6f61a88470744, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 9.194518
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57e4ddbd001436941bc6f61a88470744, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 9.194518
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57e4ddbd001436941bc6f61a88470744, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 9.194518
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57e4ddbd001436941bc6f61a88470744, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.53
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57e4ddbd001436941bc6f61a88470744, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.166
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57e4ddbd001436941bc6f61a88470744, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.29
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57e4ddbd001436941bc6f61a88470744, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7061027
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57e4ddbd001436941bc6f61a88470744, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57e4ddbd001436941bc6f61a88470744, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7081095
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57e4ddbd001436941bc6f61a88470744, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57e4ddbd001436941bc6f61a88470744, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57e4ddbd001436941bc6f61a88470744, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90.163
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 57e4ddbd001436941bc6f61a88470744, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 57e4ddbd001436941bc6f61a88470744, type: 3}
+      propertyPath: m_Name
+      value: DementorFantasma
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 57e4ddbd001436941bc6f61a88470744, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 239290498}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 57e4ddbd001436941bc6f61a88470744, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 239290495}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 57e4ddbd001436941bc6f61a88470744, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 239290496}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 57e4ddbd001436941bc6f61a88470744, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 239290497}
+  m_SourcePrefab: {fileID: 100100000, guid: 57e4ddbd001436941bc6f61a88470744, type: 3}
 --- !u!4 &6420523583344901
 Transform:
   m_ObjectHideFlags: 0
@@ -6566,10 +6732,10 @@ GameObject:
   - component: {fileID: 8728166564314785771}
   m_Layer: 0
   m_Name: columpio2
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!33 &377655436750229328
 MeshFilter:
@@ -6601,10 +6767,10 @@ GameObject:
   - component: {fileID: 4591802730323198874}
   m_Layer: 0
   m_Name: tobogan1
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!1 &535163907803903355
 GameObject:
@@ -6620,10 +6786,10 @@ GameObject:
   - component: {fileID: 5291389421449085347}
   m_Layer: 0
   m_Name: tobogan2
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &537619722673074483
 Transform:
@@ -7468,6 +7634,7 @@ GameObject:
   - component: {fileID: 6893561141575863846}
   - component: {fileID: 6893561141575863847}
   - component: {fileID: 4747694038592008203}
+  - component: {fileID: 6893561141575863851}
   - component: {fileID: 6893561141575863850}
   - component: {fileID: 6893561141575863849}
   - component: {fileID: 6893561141575863848}
@@ -8246,10 +8413,10 @@ GameObject:
   - component: {fileID: 4543028780964666348}
   m_Layer: 0
   m_Name: casita1
-  m_TagString: Suelocorrer
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!33 &3514665265819153923
 MeshFilter:
@@ -8768,10 +8935,10 @@ GameObject:
   - component: {fileID: 6170246949201373475}
   m_Layer: 0
   m_Name: columpio
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!23 &4521015145385305899
 MeshRenderer:
@@ -8877,10 +9044,10 @@ GameObject:
   - component: {fileID: 5824746653774146162}
   m_Layer: 0
   m_Name: obstaculos:columpio
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4572174888452897823
 Transform:
@@ -9198,10 +9365,10 @@ GameObject:
   - component: {fileID: 8918094602836217658}
   m_Layer: 0
   m_Name: tobogan
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!23 &5291389421449085346
 MeshRenderer:
@@ -10117,7 +10284,7 @@ GameObject:
   m_TagString: Suelocorrer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!1 &6655039671027739392
 GameObject:
@@ -10592,10 +10759,10 @@ GameObject:
   - component: {fileID: 7008926968105161444}
   m_Layer: 0
   m_Name: columpio1
-  m_TagString: Untagged
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!23 &6829939388557714614
 MeshRenderer:
@@ -10810,6 +10977,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -1908016120855092309, guid: 15e5af98381a67c48a301b5c16a96010, type: 3}
+--- !u!114 &6893561141575863851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888990593067745566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1671e62ea68d5c4aa055e6099878413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dementor: {fileID: 239290491}
 --- !u!1 &6899851826638327729
 GameObject:
   m_ObjectHideFlags: 0
@@ -13230,10 +13410,10 @@ GameObject:
   - component: {fileID: 9038196856954359552}
   m_Layer: 0
   m_Name: obstaculos:tobogan
-  m_TagString: Suelocorrer
+  m_TagString: Obstaculo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!1 &8918092545676103577
 GameObject:
@@ -14022,3 +14202,4 @@ SceneRoots:
   - {fileID: 107485598}
   - {fileID: 1610876969}
   - {fileID: 1321366365}
+  - {fileID: 1913574033}
