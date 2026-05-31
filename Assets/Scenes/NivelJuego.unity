@@ -390,6 +390,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 91066659}
+  - component: {fileID: 91066660}
   m_Layer: 0
   m_Name: toboganesycolummpios
   m_TagString: Untagged
@@ -421,6 +422,28 @@ Transform:
   - {fileID: 4543028780964666347}
   m_Father: {fileID: 543450652941696864}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &91066660
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91066658}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &107485598
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6435,6 +6458,7 @@ GameObject:
   - component: {fileID: 4313184655214438833}
   - component: {fileID: 8728166564314785770}
   - component: {fileID: 2991868194491638768}
+  - component: {fileID: 8728166564314785771}
   m_Layer: 0
   m_Name: columpio2
   m_TagString: Untagged
@@ -6469,6 +6493,7 @@ GameObject:
   - component: {fileID: 4572174888452897823}
   - component: {fileID: 4591802730323198873}
   - component: {fileID: 3422004505679946724}
+  - component: {fileID: 4591802730323198874}
   m_Layer: 0
   m_Name: tobogan1
   m_TagString: Untagged
@@ -6487,6 +6512,7 @@ GameObject:
   - component: {fileID: 3269182575073997332}
   - component: {fileID: 1387008934776098952}
   - component: {fileID: 5291389421449085346}
+  - component: {fileID: 5291389421449085347}
   m_Layer: 0
   m_Name: tobogan2
   m_TagString: Untagged
@@ -8016,6 +8042,7 @@ GameObject:
   - component: {fileID: 4543028780964666347}
   - component: {fileID: 3633646804400383819}
   - component: {fileID: 2523534969373241629}
+  - component: {fileID: 4543028780964666348}
   m_Layer: 0
   m_Name: casita1
   m_TagString: Suelocorrer
@@ -8446,6 +8473,7 @@ GameObject:
   - component: {fileID: 6170246949201373474}
   - component: {fileID: 6045955919160656463}
   - component: {fileID: 3307312414097563325}
+  - component: {fileID: 6170246949201373475}
   m_Layer: 0
   m_Name: columpio
   m_TagString: Untagged
@@ -8513,6 +8541,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 91066659}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &4543028780964666348
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3501505604108209907}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5907792783343685862, guid: 15e5af98381a67c48a301b5c16a96010, type: 3}
 --- !u!33 &4563656144338483996
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8532,6 +8582,7 @@ GameObject:
   - component: {fileID: 3519976118799181928}
   - component: {fileID: 1619167855704329645}
   - component: {fileID: 5824746653774146161}
+  - component: {fileID: 5824746653774146162}
   m_Layer: 0
   m_Name: obstaculos:columpio
   m_TagString: Untagged
@@ -8561,6 +8612,28 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 471934213986357142}
+  m_Mesh: {fileID: 6849737360520786094, guid: 15e5af98381a67c48a301b5c16a96010, type: 3}
+--- !u!64 &4591802730323198874
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471934213986357142}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 6849737360520786094, guid: 15e5af98381a67c48a301b5c16a96010, type: 3}
 --- !u!33 &4653855700201618828
 MeshFilter:
@@ -8768,6 +8841,7 @@ GameObject:
   - component: {fileID: 8918094602836217657}
   - component: {fileID: 8216199696636773799}
   - component: {fileID: 3739812773427881170}
+  - component: {fileID: 8918094602836217658}
   m_Layer: 0
   m_Name: tobogan
   m_TagString: Untagged
@@ -8821,6 +8895,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5291389421449085347
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535163907803903355}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7521698609839357355, guid: 15e5af98381a67c48a301b5c16a96010, type: 3}
 --- !u!4 &5476304283480388990
 Transform:
   m_ObjectHideFlags: 0
@@ -9078,6 +9174,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5824746653774146162
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4565385510976243845}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1630136531490817893, guid: 15e5af98381a67c48a301b5c16a96010, type: 3}
 --- !u!33 &5841180451498681914
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9320,6 +9438,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 91066659}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &6170246949201373475
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4519430568585323160}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4656827857965631497, guid: 15e5af98381a67c48a301b5c16a96010, type: 3}
 --- !u!4 &6318942826567046662
 Transform:
   m_ObjectHideFlags: 0
@@ -9606,6 +9746,7 @@ GameObject:
   - component: {fileID: 7008926968105161443}
   - component: {fileID: 2605858898454003709}
   - component: {fileID: 6829939388557714614}
+  - component: {fileID: 7008926968105161444}
   m_Layer: 0
   m_Name: columpio1
   m_TagString: Untagged
@@ -9798,6 +9939,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 91066659}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &7008926968105161444
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6814452520236013617}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8124369203863433114, guid: 15e5af98381a67c48a301b5c16a96010, type: 3}
 --- !u!33 &7279937539187859841
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -10613,6 +10776,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 351625588125969955}
   m_Mesh: {fileID: 360870623480320952, guid: 15e5af98381a67c48a301b5c16a96010, type: 3}
+--- !u!64 &8728166564314785771
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351625588125969955}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 360870623480320952, guid: 15e5af98381a67c48a301b5c16a96010, type: 3}
 --- !u!1 &8746899862024053833
 GameObject:
   m_ObjectHideFlags: 0
@@ -10624,6 +10809,7 @@ GameObject:
   - component: {fileID: 9038196856954359551}
   - component: {fileID: 3419747240798243241}
   - component: {fileID: 3196812126403315066}
+  - component: {fileID: 9038196856954359552}
   m_Layer: 0
   m_Name: obstaculos:tobogan
   m_TagString: Suelocorrer
@@ -10680,6 +10866,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 91066659}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &8918094602836217658
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5270519719862572928}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4727537803208643642, guid: 15e5af98381a67c48a301b5c16a96010, type: 3}
 --- !u!4 &8933017984703561194
 Transform:
   m_ObjectHideFlags: 0
@@ -10738,6 +10946,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 91066659}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &9038196856954359552
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8746899862024053833}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2810553938746133426, guid: 15e5af98381a67c48a301b5c16a96010, type: 3}
 --- !u!1 &9050068634461212753
 GameObject:
   m_ObjectHideFlags: 0
