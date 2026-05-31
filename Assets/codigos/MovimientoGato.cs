@@ -17,8 +17,10 @@ public class MovimientoGato : MonoBehaviour
     {
         float factorInversion = invertirDireccion ? -1f : 1f;
         
+        // Calcula el desfase de movimiento usando la función Seno
         float desfase = Mathf.Sin(Time.time * velocidad) * distancia * factorInversion;
 
+        // Aplica el movimiento en el eje Z (Adelante y Atrás)
         transform.position = new Vector3(posicionInicial.x, posicionInicial.y, posicionInicial.z + desfase);
     }
 }
