@@ -1,5 +1,8 @@
 using UnityEngine;
 
+using UnityEngine.SceneManagement;
+
+
 public class DementorFollow : MonoBehaviour
 {
     public Transform objetivo;         // Harry
@@ -30,10 +33,21 @@ public class DementorFollow : MonoBehaviour
     {
         if (objetivo == null) return;
 
+        
+float distancia = Vector3.Distance(transform.position, objetivo.position);
+
+// 🔥 SI TOCA → MUERE
+if (distancia < 0.9f)
+{
+    UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
+    return;
+}
+
+
         // --------- DETECTAR SI ESTÁ ATASCADO ----------
         float distanciaMovida = Vector3.Distance(transform.position, posicionAnterior);
 
-        if (distanciaMovida < 0.05f)
+        if (distanciaMovida < 0.05f || controller.velocity.magnitude < 0.1f)
         {
             tiempoSinMoverse += Time.deltaTime;
         }
@@ -62,26 +76,47 @@ public class DementorFollow : MonoBehaviour
         }
 
         // --------- DIRECCIÓN HACIA HARRY ----------
-        Vector3 direccion = objetivo.position - transform.position;
-        direccion.y = 0f;
+        
+Vector3 direccion = objetivo.position - transform.position;
+
+// 🔥 IMPORTANTE
+direccion.y = 0f;
+
+// evitar que intente bajarse encima
+if (controller.isGrounded == false)
+{
+    direccion.y = 0f;
+}
+
+        
+
+
+
+
 
         Vector3 movimiento = direccion.normalized * velocidad;
 
         // --------- SI ESTÁ ATASCADO → SALTAR / VOLAR ----------
-        if (tiempoSinMoverse > tiempoAntesDeVolar)
-        {
-            // Subir
-            velocidadY.y = fuerzaVolar;
+        
+if (tiempoSinMoverse > tiempoAntesDeVolar)
+{
+    // Subir un poco
+    velocidadY.y = fuerzaVolar;
 
-            // Empuje hacia adelante
-            Vector3 impulsoEscape = direccion.normalized * velocidad * 3f;
+    // Mover hacia adelante
+    Vector3 forward = direccion.normalized;
 
-            // Movimiento combinado (escape)
-            controller.Move((impulsoEscape + velocidadY) * Time.deltaTime);
+    // 🔥 ESCAPE LATERAL (izquierda o derecha)
+    Vector3 lateral = transform.right * Random.Range(-1f, 1f);
 
-            transform.LookAt(objetivo);
-            return;
-        }
+    // Combinar movimientos
+    Vector3 escape = (forward + lateral).normalized * velocidad * 3f;
+
+    controller.Move((escape + velocidadY) * Time.deltaTime);
+
+    return;
+}
+
 
         // --------- GRAVEDAD NORMAL ----------
         if (controller.isGrounded)
@@ -98,7 +133,9 @@ public class DementorFollow : MonoBehaviour
 
         controller.Move(movimientoFinal * Time.deltaTime);
 
-        // Rotar hacia Harry
-        transform.LookAt(objetivo);
+        
+        
+
+
     }
 }
