@@ -8,8 +8,12 @@ public class Movimientoharry : MonoBehaviour
     public float gravity = 20f;
     public float jumpForce = 8f;
     public string nombreAnimacionSalto = "Jump";
+    
+public bool enSuelo;
+public bool enMovimiento;
 
-    private Animator animator;
+
+    
     private CharacterController controller;
     private Vector3 velocity;
 
@@ -26,7 +30,7 @@ private float saltoExtraActual = 0f;
     void Start()
     {
         velocidadActual = speed;
-        animator = GetComponent<Animator>();
+        
         controller = GetComponent<CharacterController>();
     }
 
@@ -41,10 +45,11 @@ private float saltoExtraActual = 0f;
             move = move.normalized;
 
         bool tocandoSuelo = controller != null && (controller.isGrounded || estaEnSueloCorrer);
+        enSuelo = tocandoSuelo;
 
         if (tocandoSuelo && velocity.y <= 0f)
         {
-            velocity.y = -2f;
+            velocity.y = -8f;
 
             if (Input.GetButtonDown("Jump") && puedeSaltar)
             {
@@ -52,21 +57,26 @@ private float saltoExtraActual = 0f;
                 estaEnSueloCorrer = false;
                 tocandoSuelo = false;
                 
-                if (animator != null)
-                {
-                    animator.Play(nombreAnimacionSalto, 0, 0f);
-                }
+                
             }
         }
         else
         {
             velocity.y -= gravity * Time.deltaTime;
         }
+        
+if (!controller.isGrounded && velocity.y > -5f)
+{
+    velocity.y -= 30f * Time.deltaTime;
+}
 
-        if (controller != null)
+
+        if (controller != null && controller.enabled)
         {
-            Vector3 finalMove = (move * velocidadActual) + Vector3.up * velocity.y;
-            controller.Move(finalMove * Time.deltaTime);
+            Vector3 finalMove = move * velocidadActual;
+finalMove.y = velocity.y;
+
+controller.Move(finalMove * Time.deltaTime);
         }
         else
         {
@@ -77,22 +87,9 @@ private float saltoExtraActual = 0f;
             transform.forward = move;
 
         bool quiereMoverse = (Mathf.Abs(horizontal) > 0.1f || Mathf.Abs(vertical) > 0.1f);
+        enMovimiento = quiereMoverse;
 
-        if (animator != null)
-        {
-            if (!tocandoSuelo && controller != null)
-            {
-                animator.Play(nombreAnimacionSalto);
-            }
-            else if (quiereMoverse)
-            {
-                animator.Play("Running"); 
-            }
-            else
-            {
-                animator.Play("Idle");
-            }
-        }
+        
     }
 
     void OnControllerColliderHit(ControllerColliderHit hit)

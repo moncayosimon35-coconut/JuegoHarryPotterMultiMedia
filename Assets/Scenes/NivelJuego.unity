@@ -544,7 +544,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distancia: 1.8
-  velocidad: 6
+  velocidad: 3.5
   invertirDireccion: 0
 --- !u!114 &63040413
 MonoBehaviour:
@@ -1064,47 +1064,47 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 182299383}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ad1310a44dfad67478bc512e918d0c77, type: 3}
       propertyPath: m_LocalScale.x
-      value: 6.3104
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad1310a44dfad67478bc512e918d0c77, type: 3}
       propertyPath: m_LocalScale.y
-      value: 6.3104
+      value: 14.39196
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad1310a44dfad67478bc512e918d0c77, type: 3}
       propertyPath: m_LocalScale.z
-      value: 6.3104
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad1310a44dfad67478bc512e918d0c77, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.36
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad1310a44dfad67478bc512e918d0c77, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad1310a44dfad67478bc512e918d0c77, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.2967386
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad1310a44dfad67478bc512e918d0c77, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.719709
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad1310a44dfad67478bc512e918d0c77, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad1310a44dfad67478bc512e918d0c77, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.6942759
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad1310a44dfad67478bc512e918d0c77, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad1310a44dfad67478bc512e918d0c77, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1112,11 +1112,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad1310a44dfad67478bc512e918d0c77, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 87.939
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad1310a44dfad67478bc512e918d0c77, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5209349949458813555, guid: ad1310a44dfad67478bc512e918d0c77, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -5209349949458813555, guid: ad1310a44dfad67478bc512e918d0c77, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -5209349949458813555, guid: ad1310a44dfad67478bc512e918d0c77, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ad1310a44dfad67478bc512e918d0c77, type: 3}
       propertyPath: m_Name
@@ -1135,13 +1147,7 @@ PrefabInstance:
       addedObject: {fileID: 950352940}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ad1310a44dfad67478bc512e918d0c77, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 950352943}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ad1310a44dfad67478bc512e918d0c77, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 950352942}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ad1310a44dfad67478bc512e918d0c77, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 950352945}
+      addedObject: {fileID: 950352946}
   m_SourcePrefab: {fileID: 100100000, guid: ad1310a44dfad67478bc512e918d0c77, type: 3}
 --- !u!1 &142498877
 GameObject:
@@ -1718,6 +1724,104 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168304892}
   m_Mesh: {fileID: 8486862896904083716, guid: 15e5af98381a67c48a301b5c16a96010, type: 3}
+--- !u!1 &182299380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182299383}
+  - component: {fileID: 182299382}
+  - component: {fileID: 182299381}
+  - component: {fileID: 182299384}
+  m_Layer: 0
+  m_Name: PadreHarry
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!143 &182299381
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182299380}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.3
+  m_SlopeLimit: 50
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &182299382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182299380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 552aa4a6975f8cf4990b5013135480a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadActual: 0
+  puedeSaltar: 1
+  speed: 5
+  gravity: 20
+  jumpForce: 14
+  nombreAnimacionSalto: Jump
+  enSuelo: 0
+  enMovimiento: 0
+  estaEnSueloCorrer: 0
+--- !u!4 &182299383
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182299380}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.36, y: 0.707, z: -0.2967386}
+  m_LocalScale: {x: 1, y: 0.41269, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 950352944}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182299384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182299380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9564fbabd4a828b46a142d7c4da6ed09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 3
+  corazon1: {fileID: 1885962063}
+  corazon2: {fileID: 770474251}
+  corazon3: {fileID: 915343783}
+  tiempoInvulnerable: 1
 --- !u!1 &231793945
 GameObject:
   m_ObjectHideFlags: 0
@@ -1881,7 +1985,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239290491}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1657a71fa629b8c4299b9ebbef3a1143, type: 3}
   m_Name: 
@@ -2077,7 +2181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distancia: 1.8
-  velocidad: 4
+  velocidad: 4.2
   invertirDireccion: 0
 --- !u!114 &265833631
 MonoBehaviour:
@@ -4561,7 +4665,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distancia: 1.8
-  velocidad: 5
+  velocidad: 3.7
   invertirDireccion: 0
 --- !u!114 &622073916
 MonoBehaviour:
@@ -5817,7 +5921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distancia: 1.8
-  velocidad: 5
+  velocidad: 4.1
   invertirDireccion: 0
 --- !u!114 &842443909
 MonoBehaviour:
@@ -6312,7 +6416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distancia: 1.8
-  velocidad: 7
+  velocidad: 3.5
   invertirDireccion: 0
 --- !u!114 &872878666
 MonoBehaviour:
@@ -11815,56 +11919,12 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &950352942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 950352939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 552aa4a6975f8cf4990b5013135480a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidadActual: 0
-  puedeSaltar: 1
-  speed: 3
-  gravity: 20
-  jumpForce: 8
-  nombreAnimacionSalto: Jump
-  estaEnSueloCorrer: 1
---- !u!143 &950352943
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 950352939}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Height: 0.12
-  m_Radius: 0.03
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.06, z: 0}
 --- !u!4 &950352944 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ad1310a44dfad67478bc512e918d0c77, type: 3}
   m_PrefabInstance: {fileID: 107485598}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &950352945
+--- !u!114 &950352946
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11873,14 +11933,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 950352939}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9564fbabd4a828b46a142d7c4da6ed09, type: 3}
+  m_Script: {fileID: 11500000, guid: 47779a08a3cc03d4abec234c5716be89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 3
-  corazon1: {fileID: 1885962063}
-  corazon2: {fileID: 770474251}
-  corazon3: {fileID: 915343783}
-  tiempoInvulnerable: 1
+  movimiento: {fileID: 182299382}
 --- !u!1 &989167340
 GameObject:
   m_ObjectHideFlags: 0
@@ -23061,7 +23117,6 @@ SceneRoots:
   - {fileID: 142498879}
   - {fileID: 543450652941696864}
   - {fileID: 431730030}
-  - {fileID: 107485598}
   - {fileID: 1610876969}
   - {fileID: 1321366365}
   - {fileID: 1913574033}
@@ -23070,3 +23125,4 @@ SceneRoots:
   - {fileID: 80663038}
   - {fileID: 1359669544}
   - {fileID: 1604167268}
+  - {fileID: 182299383}
