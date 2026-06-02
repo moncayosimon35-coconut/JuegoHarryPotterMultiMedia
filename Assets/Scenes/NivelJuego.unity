@@ -1736,6 +1736,7 @@ GameObject:
   - component: {fileID: 182299382}
   - component: {fileID: 182299381}
   - component: {fileID: 182299384}
+  - component: {fileID: 182299385}
   m_Layer: 0
   m_Name: PadreHarry
   m_TagString: Player
@@ -1822,6 +1823,19 @@ MonoBehaviour:
   corazon2: {fileID: 770474251}
   corazon3: {fileID: 915343783}
   tiempoInvulnerable: 1
+--- !u!114 &182299385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182299380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f71bb14fda3116489bd33a84b88fc84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dementor: {fileID: 239290491}
 --- !u!1 &231793945
 GameObject:
   m_ObjectHideFlags: 0
